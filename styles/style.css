@@ -1,0 +1,37 @@
+#logo {
+  width: 170px;
+}
+
+body {
+  background-image: url("../images/background.png");
+  background-color: #fffcf9;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #161616;
+  margin: 5%;
+}
+
+#navbar li {
+  text-align: right;
+  text-transform: uppercase;
+  list-style-type: none;
+  padding: 10px;
+}
+
+#navbar a:link {
+  text-decoration: none;
+}
+
+#navbar a:visited {
+  color: #161616;
+}
+
+#navbar a:hover {
+  color: white;
+}
+
+#home-content {
+  margin-left: 50px;
+}
