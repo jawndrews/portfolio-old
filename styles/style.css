@@ -21,7 +21,7 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -86,4 +86,8 @@ header {
 }
 .contact-form input {
   font-size: 20px;
+}
+
+footer {
+  margin-bottom: 50px;
 }
