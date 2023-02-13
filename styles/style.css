@@ -41,6 +41,10 @@ header {
   color: #fffcf9;
 }
 
+.navbar a {
+  color: #fffcf9;
+}
+
 #home {
   padding-top: 100px;
   margin-bottom: 700px;
