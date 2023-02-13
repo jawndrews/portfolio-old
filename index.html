@@ -2,28 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Jonathan Andrews | Creative Works</title>
   </head>
   <body>
     <header>
-      <img id="logo" src="/images/logo.png" alt="Jonathan Andrews" />
-      <nav id="navbar">
+      <img
+        id="logo-inverse"
+        src="/images/logo-inverse.png"
+        alt="Jonathan Andrews"
+      />
+      <nav class="navbar">
         <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <section id="home-content">
-      <h1>Hello, my name is <strong>Jonathan.</strong></h1>
+    <section id="home">
+      <h1>I'm <strong>Jonathan.</strong></h1>
       <p>
         I'm a designer and developer <br />interested in all things creative.
       </p>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Since I was young, I've had a strong passion for computers and
+        technology which has sprouted many hobbies, including music production,
+        graphic design, and software development.<br /><br />
+        I enjoy creative problem-solving. I have completed coursework in
+        software development and database administration using Linux, C++,
+        Python, JavaScript, React, Express, Node.JS, PHP, SQL, HTML, and CSS. I
+        hope to implement my passion for creativity while building a career in
+        tech!
+      </p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <h3>Music Production</h3>
+        <h3>Photography</h3>
+        <h3>Web Development</h3>
+        <h3>Graphic Design</h3>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="content-left">
+        <h1>Let's talk.</h1>
+        <p>Contact me regarding anything your heart desires!</p>
+      </div>
+      <div class="contact-form">
+        <form>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <label for="subject">Subject:</label><br />
+          <input type="text" id="subject" name="subject" /><br />
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message"></textarea><br />
+          <input type="submit" id="submit" name="submit" />
+        </form>
+      </div>
     </section>
     <footer></footer>
   </body>
