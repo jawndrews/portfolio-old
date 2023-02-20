@@ -2,17 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles/style.css" />
     <title>Jonathan Andrews | Creative Works</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <img
-          id="logo-inverse"
-          src="images/logo-inverse.png"
-          alt="Jonathan Andrews"
-        />
+        <img id="logo" src="images/logo.png" alt="Jonathan Andrews" />
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -28,31 +25,163 @@
       </p>
     </section>
     <section id="about">
-      <h2>About</h2>
-      <p>
-        Since I was young, I've had a strong passion for computers and
-        technology which has sprouted many hobbies, including music production,
-        graphic design, and software development.<br /><br />
-        I enjoy creative problem-solving. I have completed coursework in
-        software development and database administration using Linux, C++,
-        Python, JavaScript, React, Express, Node.JS, PHP, SQL, HTML, and CSS. I
-        hope to implement my passion for creativity while building a career in
-        tech.
-      </p>
+      <div class="about-content-left">
+        <h2 class="about-header">
+          ABOUT ME
+          <hr class="horizontal-line" />
+        </h2>
+        <p>A passion for design, with a problem-solving mindset.</p>
+      </div>
+      <div class="about-content-right">
+        <p>
+          Since I was young, I've had a strong passion for computers and
+          technology which has sprouted many hobbies, including music
+          production, graphic design, and web development.<br /><br />
+          I enjoy creative problem-solving. I have completed coursework in
+          software development and database administration using Linux, C++,
+          Python, JavaScript, React, Express, Node.JS, PHP, SQL, HTML, and CSS.
+          I hope to implement my passion for creativity while building a career
+          in tech.
+        </p>
+      </div>
     </section>
     <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <h3>Music Production</h3>
-        <h3>Photography</h3>
-        <h3>Web Development</h3>
-        <h3>Graphic Design</h3>
-      </div>
+      <h2>
+        PROJECTS
+        <hr />
+      </h2>
+      <section class="music-production">
+        <h3 class="project-grid-header">Music Production</h3>
+        <div class="project-grid">
+          <div class="grid-item">
+            <iframe
+              class="arcane"
+              width="300"
+              height="300"
+              src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_nY5-F0zH16kjmIsE0KK4one0MxH_7F1Nc"
+              title="arcane-player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p>ARCANE - <em>Full Production, Album</em></p>
+          </div>
+          <div class="grid-item">
+            <iframe
+              width="300"
+              height="300"
+              src="https://www.youtube.com/embed/wejaBpSSvUY"
+              title="frantic-player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p>ON DEMAND! - <em>Full Production, Single</em></p>
+          </div>
+          <div class="grid-item">
+            <iframe
+              width="300"
+              height="300"
+              src="https://www.youtube.com/embed/videoseries?list=PLzVLyjQlnbKOx2_QSr-E14dKBgaqwB35m"
+              title="beats-player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <p>Beats I've Produced</p>
+          </div>
+        </div>
+      </section>
+      <section class="graphic-design">
+        <h3 class="project-grid-header">Graphic Design</h3>
+        <div class="project-grid">
+          <div class="grid-item">
+            <img
+              id="arcane-revival"
+              src="images/arcane-revival.png"
+              alt="Jonathan Andrews"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              id="music-creator"
+              src="images/music-creator.png"
+              alt="Jonathan Andrews"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              id="kappa-sigma"
+              src="images/kappa-sigma.png"
+              alt="Jonathan Andrews"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="web-development">
+        <h3 class="project-grid-header">Web Development</h3>
+        <div class="project-grid">
+          <div class="grid-item">
+            <h3>Fisca</h3>
+            <p>Finance Management Web App</p>
+          </div>
+          <div class="grid-item">
+            <h3>Coastie AC</h3>
+            <p>Salesforce Experience Cloud, Mock Implementation</p>
+          </div>
+        </div>
+      </section>
     </section>
     <section id="contact">
       <div class="content-left">
-        <h1>Let's talk.</h1>
+        <h1>
+          LET'S TALK.
+          <hr />
+        </h1>
         <p>Contact me regarding anything your heart desires!</p>
+        <div class="socials-grid">
+          <div class="grid-item">
+            <a
+              href="https://www.linkedin.com/in/jonathanbandrews/"
+              rel="noopener"
+              target="_blank"
+              ><img
+                id="linkedin"
+                src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_gray-512.png"
+                alt="LinkedIn"
+            /></a>
+            <a
+              href="https://www.instagram.com/jonoooh/"
+              rel="noopener"
+              target="_blank"
+            >
+              <img
+                id="insta"
+                src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_gray-512.png"
+                alt="Instagram"
+            /></a>
+            <a
+              href="https://twitter.com/jonoooh"
+              rel="noopener"
+              target="_blank"
+            >
+              <img
+                id="twitter"
+                src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_gray-512.png"
+                alt="Twitter"
+            /></a>
+            <a
+              href="https://github.com/longathan"
+              rel="noopener"
+              target="_blank"
+            >
+              <img
+                id="github"
+                src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_gray-512.png"
+                alt="GitHub"
+            /></a>
+          </div>
+        </div>
       </div>
       <div class="contact-form">
         <form>
@@ -68,6 +197,8 @@
         </form>
       </div>
     </section>
-    <footer></footer>
+    <footer>
+      <h4>Created from scratch, by me!</h4>
+    </footer>
   </body>
 </html>
