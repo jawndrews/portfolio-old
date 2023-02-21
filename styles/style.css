@@ -92,7 +92,6 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0 auto;
-  border: 2px;
   margin-bottom: 100px;
 }
 
@@ -102,7 +101,8 @@ header {
 }
 
 iframe {
-  border-radius: 300px;
+  border-radius: 50px;
+  border: 0px;
 }
 
 .music-production .grid-item {
