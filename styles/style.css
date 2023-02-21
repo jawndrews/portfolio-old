@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 
 body {
-  max-width: 1080px;
+  max-width: 60rem;
   margin: 0 auto;
   overflow: scroll;
   background-color: #0c0c0c;
@@ -14,7 +14,7 @@ header {
 }
 
 #logo {
-  width: 170px;
+  width: clamp(4rem, 4rem + 10vw, 10rem);
   margin-right: auto;
   margin-left: 0px;
 }
@@ -29,24 +29,16 @@ header {
   display: inline;
   text-transform: uppercase;
   list-style-type: none;
-  margin: 20px;
+  margin: 1rem;
 }
 
-.navbar a:link {
+.navbar a {
   text-decoration: none;
-}
-
-.navbar a:visited {
   color: #fffcf9;
 }
 
 .navbar a:hover {
-  color: #fffcf9;
   font-weight: bold;
-}
-
-.navbar a {
-  color: #fffcf9;
 }
 
 #home {
@@ -73,10 +65,6 @@ header {
   font-weight: bold;
 }
 
-.horizontal-line {
-  border-color: #fffcf9;
-}
-
 .about-content-right {
   font-size: 75%;
   color: #b5bab7;
@@ -91,7 +79,6 @@ header {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 0 auto;
   margin-bottom: 100px;
 }
 
@@ -100,9 +87,9 @@ header {
   text-align: center;
 }
 
-iframe {
-  border-radius: 50px;
-  border: 0px;
+.web-development .grid-item {
+  font-size: 18px;
+  text-align: center;
 }
 
 .music-production .grid-item {
@@ -110,31 +97,14 @@ iframe {
   text-align: center;
 }
 
-.graphic-design .grid-item {
+.youtube-vid {
+  width: 300px;
+  border: 0px;
+}
+
+.graphic-design .grid-item img {
   margin-top: 50px;
-}
-
-#arcane-revival {
   width: 300px;
-  margin-right: auto;
-  margin-left: 0px;
-}
-
-#kappa-sigma {
-  width: 300px;
-  margin-right: auto;
-  margin-left: 0px;
-}
-
-#music-creator {
-  width: 300px;
-  margin-right: auto;
-  margin-left: 0px;
-}
-
-.web-development .grid-item {
-  font-size: 18px;
-  text-align: center;
 }
 
 #contact {
@@ -146,19 +116,7 @@ iframe {
   grid-template-columns: 1fr 1fr;
 }
 
-#linkedin {
-  width: 100px;
-}
-
-#insta {
-  width: 100px;
-}
-
-#twitter {
-  width: 100px;
-}
-
-#github {
+.socials-icon {
   width: 100px;
 }
 
