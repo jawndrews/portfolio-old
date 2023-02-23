@@ -87,9 +87,29 @@ header {
   text-align: center;
 }
 
-.web-development .grid-item {
-  font-size: 18px;
-  text-align: center;
+.web-development .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 100px;
+  column-gap: 0px;
+}
+
+.web-development-header {
+  font-size: 30px;
+  color: #7959ee;
+}
+
+.web-dev-content-left {
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.web-dev-content-right {
+  margin-left: auto;
+}
+
+#web-dev-img {
+  width: 450px;
 }
 
 .music-production .grid-item {
