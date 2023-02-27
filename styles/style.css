@@ -4,6 +4,7 @@ body {
   max-width: 60rem;
   margin: 0 auto;
   overflow: scroll;
+  background-image: url("/images/constellation.svg");
   background-color: #0c0c0c;
   font-family: "Source Sans Pro", sans-serif;
   color: #fffcf9;
@@ -35,10 +36,11 @@ header {
 .navbar a {
   text-decoration: none;
   color: #fffcf9;
+  font-weight: bold;
 }
 
 .navbar a:hover {
-  font-weight: bold;
+  color: #6a16f5;
 }
 
 #home {
@@ -57,7 +59,7 @@ header {
 
 .about-header {
   font-size: 30px;
-  color: #7959ee;
+  color: #6a16f5;
 }
 
 .about-content-left {
@@ -96,7 +98,7 @@ header {
 
 .web-development-header {
   font-size: 30px;
-  color: #7959ee;
+  color: #6a16f5;
 }
 
 .web-dev-content-left {
@@ -105,11 +107,7 @@ header {
 }
 
 .web-dev-content-right {
-  margin-left: auto;
-}
-
-#web-dev-img {
-  width: 450px;
+  margin-left: 0;
 }
 
 .music-production .grid-item {
@@ -120,11 +118,6 @@ header {
 .youtube-vid {
   width: 300px;
   border: 0px;
-}
-
-.graphic-design .grid-item img {
-  margin-top: 50px;
-  width: 300px;
 }
 
 #contact {
@@ -157,4 +150,10 @@ footer {
   margin-top: 100px;
   margin-bottom: 50px;
   text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .navbar li {
+    display: flex;
+  }
 }
