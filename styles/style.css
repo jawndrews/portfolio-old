@@ -4,7 +4,7 @@ body {
   max-width: 60rem;
   margin: 0 auto;
   overflow: scroll;
-  background-image: url("/images/constellation.svg");
+  background-image: url("../images/constellation.svg");
   background-color: #0c0c0c;
   font-family: "Source Sans Pro", sans-serif;
   color: #fffcf9;
@@ -45,13 +45,13 @@ header {
 
 #home {
   padding-top: 100px;
-  margin-bottom: 700px;
-  margin-left: 50px;
+  margin-bottom: 50rem;
+  margin-left: 3.5rem;
   font-size: 42px;
 }
 
 #about {
-  margin-left: 50px;
+  margin-left: 3.5rem;
   font-size: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -73,8 +73,8 @@ header {
 }
 
 #projects {
-  margin-top: 100px;
-  margin-left: 50px;
+  margin-top: 15rem;
+  margin-left: 3.5rem;
   font-size: 30px;
 }
 
@@ -88,6 +88,7 @@ header {
   font-size: 30px;
   text-align: center;
   opacity: 32%;
+  margin-top: 5rem;
 }
 
 .web-development .project-grid {
@@ -122,8 +123,8 @@ header {
 }
 
 #contact {
-  margin-top: 100px;
-  margin-left: 50px;
+  margin-top: 15rem;
+  margin-left: 3.5rem;
   font-size: 30px;
   display: grid;
   grid-column-gap: 40px;
@@ -145,6 +146,34 @@ header {
 
 .contact-form input {
   font-size: 20px;
+  background-color: #fffcf91e;
+  color: #fffcf9;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+}
+
+.contact-form textarea {
+  font-size: 20px;
+  background-color: #fffcf91e;
+  color: #fffcf9;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+}
+
+.contact-form #submit {
+  background-color: #fffcf91e;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom-style: hidden;
+}
+
+.contact-form #submit:hover {
+  background-color: #6a16f5;
 }
 
 .resume-table th {
@@ -178,7 +207,7 @@ header {
 }
 
 footer {
-  margin-top: 100px;
+  margin-top: 10rem;
   margin-bottom: 50px;
   text-align: center;
 }
