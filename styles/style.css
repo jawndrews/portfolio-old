@@ -7,7 +7,6 @@ html {
 body {
   max-width: 60rem;
   margin: 0 auto;
-  overflow: scroll;
   background-image: url("../images/constellation.svg");
   background-color: #0c0c0c;
   font-family: "Source Sans Pro", sans-serif;
@@ -16,6 +15,9 @@ body {
 
 header {
   margin: 50px;
+  margin-right: 0px;
+  position: sticky;
+  top: 0;
 }
 
 #logo {
@@ -35,6 +37,7 @@ header {
   text-transform: uppercase;
   list-style-type: none;
   margin: 1rem;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar a {
@@ -166,6 +169,7 @@ header {
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
+  max-width: 22rem;
 }
 
 .contact-form #submit {
