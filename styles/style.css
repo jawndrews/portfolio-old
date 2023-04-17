@@ -7,7 +7,7 @@ html {
 body {
   max-width: 60rem;
   margin: 0 auto;
-  background-image: url("../images/constellation.svg");
+  background-image: url("../images/topography.svg");
   background-color: #0c0c0c;
   font-family: "Source Sans Pro", sans-serif;
   color: #fffcf9;
@@ -47,7 +47,7 @@ header {
 }
 
 .navbar a:hover {
-  color: #6a16f5;
+  color: #644ece;
 }
 
 #home {
@@ -55,6 +55,10 @@ header {
   margin-bottom: 50rem;
   margin-left: 3.5rem;
   font-size: 42px;
+}
+
+#home b {
+  color: #644ece;
 }
 
 #about {
@@ -66,7 +70,7 @@ header {
 
 .about-header {
   font-size: 30px;
-  color: #6a16f5;
+  color: #644ece;
 }
 
 .about-content-left {
@@ -107,7 +111,7 @@ header {
 
 .web-development-header {
   font-size: 30px;
-  color: #6a16f5;
+  color: #644ece;
 }
 
 .web-dev-content-left {
@@ -181,7 +185,7 @@ header {
 }
 
 .contact-form #submit:hover {
-  background-color: #6a16f5;
+  background-color: #644ece;
 }
 
 .resume-table th {
