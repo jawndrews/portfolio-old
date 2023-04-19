@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  max-width: 60rem;
+  max-width: 75rem;
   margin: 0 auto;
   background-image: url("../images/topography.svg");
   background-color: #0c0c0c;
@@ -14,8 +14,7 @@ body {
 }
 
 header {
-  margin: 50px;
-  margin-right: 0px;
+  margin-top: 3rem;
   position: sticky;
   top: 0;
 }
@@ -23,7 +22,6 @@ header {
 #logo {
   width: clamp(4rem, 4rem + 10vw, 10rem);
   margin-right: auto;
-  margin-left: 0px;
 }
 
 .navbar {
@@ -53,8 +51,6 @@ header {
 #home {
   padding-top: 100px;
   margin-bottom: 50rem;
-  margin-left: 3.5rem;
-  font-size: 42px;
 }
 
 #home b {
@@ -62,8 +58,7 @@ header {
 }
 
 #about {
-  margin-left: 3.5rem;
-  font-size: 30px;
+  font-size: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -85,42 +80,35 @@ header {
 
 #projects {
   margin-top: 15rem;
-  margin-left: 3.5rem;
-  font-size: 30px;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-bottom: 100px;
-}
-
-.project-grid-header {
-  font-size: 30px;
+#projects h3 {
   text-align: center;
   opacity: 32%;
   margin-top: 5rem;
 }
 
-.web-development .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-bottom: 100px;
-  column-gap: 0px;
-}
-
-.web-development-header {
-  font-size: 30px;
+.web-development h2 {
   color: #644ece;
 }
 
-.web-dev-content-left {
-  font-weight: bold;
-  margin-right: 2rem;
+.web-dev-content-info h2 {
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.web-dev-content-right {
-  margin-left: 0;
+.web-dev-content-info {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#web-dev-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 
 .music-production .grid-item {
@@ -135,30 +123,33 @@ header {
 
 #contact {
   margin-top: 15rem;
-  margin-left: 3.5rem;
-  font-size: 30px;
   display: grid;
   grid-column-gap: 40px;
   grid-template-columns: 1fr 1fr;
 }
 
 .socials-icon {
-  width: 100px;
+  width: 7vw;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: start;
 }
 
 .contact-form {
   padding-top: 20px;
-  margin-left: 50px;
 }
 
 .contact-form label {
-  font-size: 20px;
+  font-size: 1em;
 }
 
 .contact-form input {
-  font-size: 20px;
+  font-size: 1rem;
   background-color: #fffcf91e;
   color: #fffcf9;
+  width: 75%;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
@@ -166,21 +157,22 @@ header {
 }
 
 .contact-form textarea {
-  font-size: 20px;
+  font-size: 1rem;
   background-color: #fffcf91e;
   color: #fffcf9;
+  width: 75%;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
-  max-width: 22rem;
 }
 
 .contact-form #submit {
   background-color: #fffcf91e;
   padding: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-top: 1rem;
+  width: 6rem;
+  padding: 1rem;
   border-bottom-style: hidden;
 }
 
@@ -224,8 +216,47 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
   .navbar li {
     display: flex;
+  }
+  body {
+    font-size: 1rem;
+  }
+  #home {
+    font-size: 1.8rem;
+  }
+  #about {
+    font-size: 1.5rem;
+  }
+  #contact h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 0.9rem;
+  }
+  #home {
+    font-size: 2.2rem;
+  }
+  #about {
+    font-size: 1.8rem;
+  }
+  #contact h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.4rem;
+  }
+  #home {
+    font-size: 2.5rem;
+  }
+  #contact h1 {
+    font-size: 2.5rem;
   }
 }
