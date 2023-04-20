@@ -17,17 +17,14 @@ header {
   margin-top: 3rem;
   position: sticky;
   top: 0;
-}
-
-#logo {
-  width: clamp(4rem, 4rem + 10vw, 10rem);
-  margin-right: auto;
+  z-index: 2;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .navbar li {
@@ -48,8 +45,17 @@ header {
   color: #644ece;
 }
 
+.navbar a.active {
+  color: #644ece;
+}
+
+#logo {
+  width: clamp(4rem, 4rem + 10vw, 10rem);
+  margin-right: auto;
+}
+
 #home {
-  padding-top: 100px;
+  padding-top: 10rem;
   margin-bottom: 50rem;
 }
 
@@ -58,9 +64,11 @@ header {
 }
 
 #about {
+  padding-top: 12rem;
   font-size: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-bottom: 50rem;
 }
 
 .about-header {
@@ -79,36 +87,70 @@ header {
 }
 
 #projects {
-  margin-top: 15rem;
+  padding-top: 12rem;
 }
 
-#projects h3 {
-  text-align: center;
-  opacity: 32%;
-  margin-top: 5rem;
+.project-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.web-development h2 {
-  color: #644ece;
-}
-
-.web-dev-content-info h2 {
-  font-weight: bolder;
-  font-size: 2rem;
-  text-align: center;
-}
-
-.web-dev-content-info {
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: center;
-}
-
-#web-dev-img {
+.project-container img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
+  z-index: 1;
+  max-width: 90%;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  margin: 0 auto;
+}
+
+.project-container img:hover {
+  opacity: 0.7;
+  -webkit-filter: blur(5px); /* For Safari and old versions of Chrome */
+  filter: blur(5px);
+  transition: filter 200ms ease-in-out;
+}
+
+.project-info {
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+.project-container:hover .project-info {
+  opacity: 1;
+  transition: all 0.8s ease-in-out;
+}
+
+.project-info h3 {
+  color: #644ece;
+  font-weight: bolder;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.project-info button {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #644ece;
+  color: #b5bab7;
+  border: none;
+  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .music-production .grid-item {
@@ -122,14 +164,16 @@ header {
 }
 
 #contact {
-  margin-top: 15rem;
+  padding-top: 12rem;
+  margin-top: 20rem;
   display: grid;
   grid-column-gap: 40px;
   grid-template-columns: 1fr 1fr;
 }
 
 .socials-icon {
-  width: 7vw;
+  width: 9vw;
+  max-width: 100px;
 }
 
 .grid-item {
