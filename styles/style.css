@@ -274,11 +274,15 @@ footer {
   }
   body {
     font-size: 1rem;
+    padding: 2rem;
   }
   #home {
     font-size: 1.8rem;
   }
   #about {
+    font-size: 1.5rem;
+  }
+  #projects {
     font-size: 1.5rem;
   }
   #contact h1 {
@@ -289,12 +293,16 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
     font-size: 0.9rem;
+    padding: 2rem;
   }
   #home {
     font-size: 2.2rem;
   }
   #about {
     font-size: 1.8rem;
+  }
+  #projects {
+    font-size: 1.5rem;
   }
   #contact h1 {
     font-size: 2.2rem;
@@ -304,9 +312,13 @@ footer {
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.4rem;
+    padding: 2rem;
   }
   #home {
     font-size: 2.5rem;
+  }
+  #projects {
+    font-size: 1.5rem;
   }
   #contact h1 {
     font-size: 2.5rem;
