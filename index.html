@@ -42,8 +42,8 @@
         "publisher": "Arcane Revival"
       }
     </script>
-    <script script src="scripts/highlightActiveSection.js"></script>
-    
+    <script src="scripts/highlightActiveSection.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <header>
@@ -86,6 +86,7 @@
       <hr />!-->
       <section class="web-development">
         <div class="project-container">
+          <p class="tip">Hover over an item to learn more.</p>
           <img src="images/fisca-mockup.png" alt="Project Image">
           <div class="project-info">
             <h3>Fisca</h3>
@@ -93,8 +94,6 @@
             <button>View Demo</button>
         </div>
       </section>
-
-      
       <!--<section class="music-production">
         <h3 class="project-grid-header">Music Production</h3>
         <div class="project-grid">
@@ -208,5 +207,12 @@
     <footer>
       <p>Created from scratch, by me!</p>
     </footer>
+
+    <script>
+      ScrollReveal({reset: true, duration: 1000, distance: '300px', origin: 'left'}).reveal('.about-content-left');
+      ScrollReveal({reset: true, duration: 1000, distance: '300px', origin: 'right'}).reveal('.about-content-right');
+      ScrollReveal({reset: true, duration: 1000, distance: '300px', origin: 'left'}).reveal('#projects');
+      ScrollReveal({reset: true, duration: 1000, distance: '300px', origin: 'right'}).reveal('#contact');
+    </script>
   </body>
 </html>
