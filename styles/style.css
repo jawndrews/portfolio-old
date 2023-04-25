@@ -1,7 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,21 +14,71 @@ body {
   margin: 0 auto;
   background-image: url("../images/topography.svg");
   background-color: #0c0c0c;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fffcf9;
+  font-size: 16px;
 }
 
 header {
-  padding-top: 3rem;
   position: sticky;
-  top: 0;
+  top: 2rem;
   z-index: 2;
+}
+
+#menu-svg {
+  width: 25px;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #navlinks {
+  display: none;
+  background-color: #0c0c0cda;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #fffcf9;
+  font-weight: bold;
+  padding: 14px 16px;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav li {
+  display: inline;
+  text-transform: uppercase;
+  list-style-type: none;
+  margin: 0 1rem 0 1rem;
+  transition: 0.2s ease-in-out;
+}
+
+.topnav a:hover {
+  background-color: #dddddd0c;
+  color: #644ece;
+  transition: color 0.3s ease-in-out;
+}
+a,
+a:hover {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   z-index: 1;
 }
 
@@ -31,8 +86,8 @@ header {
   display: inline;
   text-transform: uppercase;
   list-style-type: none;
-  margin: 1rem;
-  transition: 0.3s ease-in-out;
+  margin: 0 1rem 0 1rem;
+  transition: 0.2s ease-in-out;
 }
 
 .navbar a {
@@ -45,18 +100,14 @@ header {
   color: #644ece;
 }
 
-.navbar a.active {
-  color: #644ece;
-}
-
 #logo {
   width: clamp(4rem, 4rem + 10vw, 10rem);
   margin-right: auto;
 }
 
 #home {
-  padding-top: 14rem;
-  margin-bottom: 20rem;
+  padding-top: 12rem;
+  margin-bottom: 10rem;
 }
 
 #home b {
@@ -72,8 +123,9 @@ header {
 }
 
 .about-header {
-  font-size: 30px;
+  font-size: 100%;
   color: #644ece;
+  font-weight: bold;
 }
 
 .about-content-left {
@@ -82,106 +134,77 @@ header {
 }
 
 .about-content-right {
-  font-size: 75%;
+  font-size: 65%;
   color: #b5bab7;
 }
 
 #projects {
+  display: flex;
   padding-top: 14rem;
   margin-bottom: 20rem;
+  max-height: auto;
 }
 
-.project-container {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
+.card {
+  margin: 1rem;
+  background: #222;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem;
 }
 
-.project-container .tip {
-  text-align: center;
-  width: 100%;
-  opacity: 0.3;
-  font-size: 1.1rem;
-  padding-bottom: 4rem;
-  margin: 0 auto;
-}
-
-.project-container img {
-  display: block;
-  z-index: 1;
-  max-width: 90%;
-  height: auto;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-  margin: 0 auto;
-}
-
-.project-container img:hover {
-  opacity: 0.7;
-  -webkit-filter: blur(5px); /* For Safari and old versions of Chrome */
-  filter: blur(5px);
-  transition: filter 200ms ease-in-out;
-}
-
-.project-info {
+.card-title {
   font-weight: bold;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
 }
 
-.project-container:hover .project-info {
-  opacity: 1;
-  transition: all 0.8s ease-in-out;
+.card-text {
+  font-size: 16px;
 }
 
-.project-info h3 {
-  color: #644ece;
-  font-weight: bolder;
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 10px;
+.card-subtitle {
+  color: #fffcf979;
 }
 
-.project-info p {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.project-info button {
-  position: absolute;
-  padding: 10px 20px;
+.btn {
+  border: 5px solid;
+  margin: 0 auto;
+  text-decoration: none;
+  transition: all 0.4s ease;
   font-size: 1rem;
   background-color: #644ece;
-  color: #b5bab7;
+  color: #fffcf9;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn:hover,
+.btn:focus {
+  border: 5px solid;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  font-size: 1rem;
+  background-color: rgb(153, 61, 196);
+  color: #fffcf9;
   border: none;
   border-radius: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.music-production .grid-item {
-  font-size: 18px;
-  text-align: center;
-}
-
-.youtube-vid {
-  width: 300px;
-  border: 0px;
+  box-shadow: #222 21px 2 10px;
 }
 
 #contact {
   margin-top: 30rem;
+  font-size: 1.5rem;
   display: grid;
   grid-column-gap: 40px;
   grid-template-columns: 1fr 1fr;
 }
 
+#contact h1 {
+  font-size: 100%;
+  color: #644ece;
+  font-weight: bolder;
+}
+
 .socials-icon {
-  width: 9vw;
+  width: 100%;
   max-width: 100px;
 }
 
@@ -191,17 +214,16 @@ header {
 }
 
 .contact-form {
-  padding-top: 40px;
-}
-
-.contact-form label {
-  font-size: 1em;
+  padding-top: 7px;
+  display: block;
+  align-items: center;
 }
 
 .contact-form input {
   font-size: 1rem;
-  background-color: #fffcf91e;
+  background-color: transparent;
   color: #fffcf9;
+  padding: 2rem 0 0 0;
   width: 75%;
   border-top-style: hidden;
   border-right-style: hidden;
@@ -209,15 +231,30 @@ header {
   border-bottom-style: groove;
 }
 
+.contact-form ::placeholder {
+  font-size: 1rem;
+  opacity: 0.6;
+  color: #fffcf9;
+}
+
+.contact-form input:hover {
+  background-color: #fffcf90e;
+}
+
 .contact-form textarea {
   font-size: 1rem;
-  background-color: #fffcf91e;
+  background-color: transparent;
   color: #fffcf9;
+  padding: 2rem 0 0 0;
   width: 75%;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
+}
+
+.contact-form textarea:hover {
+  background-color: #fffcf90e;
 }
 
 .contact-form #submit {
@@ -225,42 +262,11 @@ header {
   padding: 0.5rem;
   margin-top: 1rem;
   width: 6rem;
-  padding: 1rem;
   border-bottom-style: hidden;
 }
 
 .contact-form #submit:hover {
   background-color: #644ece;
-}
-
-.resume-table th {
-  padding: 1.5rem;
-  text-align: left;
-}
-
-.resume-table td {
-  padding: 1rem;
-}
-
-.table-title {
-  text-align: center;
-}
-
-.work-experience-body tr:hover {
-  color: #9866e9;
-}
-
-.education-body tr:hover {
-  color: #9866e9;
-}
-
-.skills-body tr:hover {
-  color: #9866e9;
-}
-
-.center {
-  padding-right: 1rem;
-  text-align: center;
 }
 
 footer {
@@ -269,8 +275,8 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar li {
-    display: flex;
+  .navbar {
+    display: none;
   }
   body {
     font-size: 1rem;
@@ -288,12 +294,26 @@ footer {
   #contact h1 {
     font-size: 1.8rem;
   }
+  .about-content-left,
+  .about-content-right {
+    margin: 0;
+  }
+  #home,
+  #about,
+  #projects,
+  #contact {
+    padding-top: 7rem;
+    display: block;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     padding: 2rem;
+  }
+  .topnav {
+    display: none;
   }
   #home {
     font-size: 2.2rem;
@@ -310,6 +330,9 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  .topnav {
+    display: none;
+  }
   body {
     font-size: 1.4rem;
     padding: 2rem;
