@@ -105,6 +105,11 @@ a:hover {
   margin-right: auto;
 }
 
+#logo-mobile {
+  width: clamp(4rem, 4rem + 10vw, 10rem);
+  margin-right: auto;
+}
+
 #home {
   padding-top: 12rem;
   margin-bottom: 10rem;
@@ -142,7 +147,6 @@ a:hover {
   display: flex;
   padding-top: 14rem;
   margin-bottom: 20rem;
-  max-height: auto;
 }
 
 .card {
@@ -186,7 +190,6 @@ a:hover {
   color: #fffcf9;
   border: none;
   border-radius: 5px;
-  box-shadow: #222 21px 2 10px;
 }
 
 #contact {
