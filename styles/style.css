@@ -138,6 +138,14 @@ a:hover {
   font-weight: bold;
 }
 
+.about-content-left p {
+  margin-right: 2rem;
+  font-weight: bold;
+  border-top: 1px solid #fffcf9;
+  padding-top: 20px;
+  display: inline-block;
+}
+
 .about-content-right {
   font-size: 65%;
   color: #b5bab7;
@@ -145,7 +153,7 @@ a:hover {
 
 #projects {
   display: flex;
-  padding-top: 14rem;
+  padding-top: 10rem;
   margin-bottom: 20rem;
 }
 
@@ -156,8 +164,15 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .card-title {
   font-weight: bold;
+  display: flex;
 }
 
 .card-text {
@@ -168,9 +183,18 @@ a:hover {
   color: #fffcf979;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 1.5rem 1rem 1rem 1rem;
+  gap: 1rem;
+}
+
 .btn {
   border: 5px solid;
-  margin: 0 auto;
+  margin: auto;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
   text-decoration: none;
   transition: all 0.4s ease;
   font-size: 1rem;
@@ -206,9 +230,14 @@ a:hover {
   font-weight: bolder;
 }
 
+#contact p {
+  font-size: 80%;
+}
+
 .socials-icon {
   width: 100%;
   max-width: 100px;
+  padding: 0.5rem;
 }
 
 .grid-item {
@@ -285,21 +314,33 @@ footer {
     font-size: 1rem;
     padding: 2rem;
   }
+  #home h1 {
+    font-size: 2.5rem;
+  }
   #home {
     font-size: 1.8rem;
   }
   #about {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   #projects {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   #contact h1 {
     font-size: 1.8rem;
   }
+  #contact p {
+    font-size: 80%;
+  }
   .about-content-left,
   .about-content-right {
     margin: 0;
+  }
+  .contact-form input {
+    width: 100%;
+  }
+  .contact-form textarea {
+    width: 100%;
   }
   #home,
   #about,
@@ -318,17 +359,25 @@ footer {
   .topnav {
     display: none;
   }
+  #home h1 {
+    font-size: 2.5rem;
+  }
   #home {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   #about {
     font-size: 1.8rem;
   }
   #projects {
     font-size: 1.5rem;
+    padding-top: 7rem;
+    display: block;
   }
   #contact h1 {
     font-size: 2.2rem;
+  }
+  #contact p {
+    font-size: 85%;
   }
 }
 
@@ -340,6 +389,9 @@ footer {
     font-size: 1.4rem;
     padding: 2rem;
   }
+  #home h1 {
+    font-size: 3rem;
+  }
   #home {
     font-size: 2.5rem;
   }
@@ -348,5 +400,8 @@ footer {
   }
   #contact h1 {
     font-size: 2.5rem;
+  }
+  #contact p {
+    font-size: 90%;
   }
 }
