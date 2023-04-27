@@ -141,9 +141,6 @@ a:hover {
 .about-content-left p {
   margin-right: 2rem;
   font-weight: bold;
-  border-top: 1px solid #fffcf9;
-  padding-top: 20px;
-  display: inline-block;
 }
 
 .about-content-right {
