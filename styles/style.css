@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
   background-image: url("../images/topography.svg");
   background-color: #0c0c0c;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fffcf9;
   font-size: 16px;
 }
@@ -148,13 +148,23 @@ a:hover {
   color: #b5bab7;
 }
 
+.project-wrapper {
+  padding-top: 5rem;
+}
+
 #projects {
-  display: flex;
-  padding-top: 6rem;
+  padding-top: 15rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
 }
 
 .project-header {
   position: absolute;
+  margin-top: 8rem;
   font-size: 2rem;
   color: #644ece;
   font-weight: bold;
@@ -164,7 +174,7 @@ a:hover {
 }
 
 .card {
-  margin: 1rem;
+  width: 100%;
   background: #222;
   color: rgba(250, 250, 250, 0.8);
   margin-bottom: 2rem;
@@ -261,7 +271,7 @@ a:hover {
   font-size: 1rem;
   background-color: transparent;
   color: #fffcf9;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0 0 0.2rem;
   width: 75%;
   border-top-style: hidden;
   border-right-style: hidden;
@@ -283,7 +293,7 @@ a:hover {
   font-size: 1rem;
   background-color: transparent;
   color: #fffcf9;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0 0 0.2rem;
   width: 75%;
   border-top-style: hidden;
   border-right-style: hidden;
@@ -308,8 +318,11 @@ a:hover {
 }
 
 footer {
-  margin-top: 14rem;
-  text-align: center;
+  max-width: 100%;
+  padding-top: 30px;
+  margin: 0;
+  width: 100vw;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
@@ -331,6 +344,9 @@ footer {
   }
   #projects {
     font-size: 1.8rem;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
   }
   #contact h1 {
     font-size: 1.8rem;

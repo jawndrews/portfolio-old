@@ -28,15 +28,6 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <title>Jonathan Andrews | Portfolio</title>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "Person",
-        "name": "Jonathan Andrews",
-        "memberOf": "University of Kentucky School of Information Science",
-        "description": "Graduate student studying Web Development and Data Science"
-      }
-    </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="scripts/menu.js"></script>
   </head>
@@ -86,105 +77,139 @@
         </article>
         <article class="about-content-right">
           <p>
-            My passion for technology started at a young age, which has sprouted
-            many hobbies, including music production and graphic design.<br /><br />
-            I thrive on creative problem-solving. I've completed coursework in
-            software development and database administration using JavaScript,
-            React.js, Express.js, Node.js, C++, Python, Linux, PHP, SQL, HTML,
-            and CSS. Ultimately, I hope to channel my passion for creativity
-            while building a career in tech.
+            My love for technology started at a young age, which has sprouted
+            many hobbies, including music production and graphic design. I've
+            kept this creative mindset which has fostered a strong interest in
+            front-end web development.<br /><br />
+            I thrive on creative problem-solving. I've completed both coursework
+            and personal projects in software development and database
+            administration using JavaScript technologies including React,
+            Express, and Node.js, as well as object-oriented languages such as
+            C++ and Python. Ultimately, I hope to channel my passion for
+            creativity while building a career in tech!
           </p>
         </article>
       </section>
-      <section id="projects" class="container mx-auto mt-4">
-        <h1 class="project-header">PROJECTS</h1>
-        <article class="card">
-          <img
-            src="images/fisca-mockup.png"
-            class="card-img-top"
-            alt="fisca-img-top"
-          />
-          <div class="card-body">
-            <div>
-              <h3 class="card-title">Fisca</h3>
-              <h6 class="card-subtitle mb-2">Full-stack Finance Web App</h6>
-              <p class="card-text">
-                Web app used for finance and member management. Created with
-                ReactJS, Express, Node.js, and MongoDB.
-              </p>
-            </div>
-            <div class="buttons">
-              <!--<a href="#" class="btn mr-2"
+      <div class="project-wrapper">
+        <section id="projects" class="container mx-auto mt-4 grid-container">
+          <h1 class="project-header">PROJECTS</h1>
+          <article class="card">
+            <img
+              src="images/dashboard-dark.png"
+              class="card-img-top"
+              alt="everdant-img-top"
+            />
+            <div class="card-body">
+              <div>
+                <h3 class="card-title">Everdant</h3>
+                <h6 class="card-subtitle mb-2">Full-stack Finance Web App</h6>
+                <p class="card-text">
+                  Streamlined finance and member management dashboard. Created
+                  using React, Express, Node.js, and MongoDB.
+                </p>
+              </div>
+              <div class="buttons">
+                <!--<a href="#" class="btn mr-2"
                 ><i class="card-link"></i>View Demo</a
               >!-->
-              <a
-                href="https://github.com/longathan/finance-web-dev-project"
-                class="btn"
-                target="_blank"
-                rel="noopener"
-                ><i class="card-link"></i>View Code</a
-              >
+                <a
+                  href="https://github.com/longathan/finance-web-dev-project"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="card-link"></i>View Code</a
+                >
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="card">
-          <img
-            src="images/coastieac.png"
-            class="card-img-top"
-            alt="coastieac-img-top"
-          />
-          <div class="card-body">
-            <div>
-              <h3 class="card-title">Coastie AC</h3>
-              <h6 class="card-subtitle mb-2">Salesforce Service Portal</h6>
-              <p class="card-text">
-                A custom client-facing Salesforce Service Cloud service portal
-                for a mock business. Used for client self-service and case
-                deflection.
-              </p>
-            </div>
-            <div class="buttons">
-              <!--<a href="#" class="btn mr-2"
+          </article>
+          <article class="card">
+            <img
+              src="images/mediahook.png"
+              class="card-img-top"
+              alt="mediahook-img-top"
+            />
+            <div class="card-body">
+              <div>
+                <h3 class="card-title">mediahook</h3>
+                <h6 class="card-subtitle mb-2">Full-stack Web App</h6>
+                <p class="card-text">
+                  Lightweight online media converter for extracting audio from
+                  social media videos. Personal project using React and Express.
+                </p>
+              </div>
+              <div class="buttons">
+                <!--<a href="#" class="btn mr-2"
                 ><i class="card-link"></i>View Demo</a
               >!-->
-              <a
-                href="https://casestudysbja-dev-ed.develop.my.site.com/service/s/"
-                class="btn mr-2"
-                target="_blank"
-                rel="noopener"
-                ><i class="card-link"></i>View Site</a
-              >
+                <a
+                  href="https://github.com/longathan/media-converter"
+                  class="btn"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="card-link"></i>View Code</a
+                >
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="card">
-          <img
-            src="images/musiccreator-site.png"
-            class="card-img-top"
-            alt="musiccreator-img-top"
-          />
-          <div class="card-body">
-            <div>
-              <h3 class="card-title">MusicCreator</h3>
-              <h6 class="card-subtitle mb-2">E-Commerce Product Designs</h6>
-              <p class="card-text">
-                Product images, logos, social media kits, and creative brand
-                identity developed for an e-commerce music store.
-              </p>
+          </article>
+          <article class="card">
+            <img
+              src="images/coastieac.png"
+              class="card-img-top"
+              alt="coastieac-img-top"
+            />
+            <div class="card-body">
+              <div>
+                <h3 class="card-title">Coastie AC</h3>
+                <h6 class="card-subtitle mb-2">Customer Service Portal</h6>
+                <p class="card-text">
+                  A custom client-facing Salesforce Service Cloud service portal
+                  for a mock business. Used for client self-service and case
+                  deflection.
+                </p>
+              </div>
+              <div class="buttons">
+                <!--<a href="#" class="btn mr-2"
+                ><i class="card-link"></i>View Demo</a
+              >!-->
+                <a
+                  href="https://casestudysbja-dev-ed.develop.my.site.com/service/s/"
+                  class="btn mr-2"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="card-link"></i>View Site</a
+                >
+              </div>
             </div>
-            <div class="buttons">
-              <!--<a href="#" class="btn"><i class="card-link"></i>View Designs</a>!-->
-              <a
-                href="https://musiccreator.com/"
-                class="btn mr-2"
-                target="_blank"
-                rel="noopener"
-                ><i class="card-link"></i>View Site</a
-              >
+          </article>
+          <article class="card">
+            <img
+              src="images/musiccreator-site.png"
+              class="card-img-top"
+              alt="musiccreator-img-top"
+            />
+            <div class="card-body">
+              <div>
+                <h3 class="card-title">MusicCreator</h3>
+                <h6 class="card-subtitle mb-2">E-Commerce Product Designs</h6>
+                <p class="card-text">
+                  Product images, logos, social media kits, and creative brand
+                  identity developed for an e-commerce music store.
+                </p>
+              </div>
+              <div class="buttons">
+                <!--<a href="#" class="btn"><i class="card-link"></i>View Designs</a>!-->
+                <a
+                  href="https://musiccreator.com/"
+                  class="btn mr-2"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="card-link"></i>View Site</a
+                >
+              </div>
             </div>
-          </div>
-        </article>
-      </section>
+          </article>
+        </section>
+      </div>
       <section id="contact">
         <aside class="content-left">
           <h1 class="contact-header">LET'S TALK.</h1>
@@ -287,8 +312,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p></p>
+    <footer id="footer">
+      <p>© Jonathan Andrews</p>
     </footer>
 
     <script>
@@ -319,6 +344,12 @@
         distance: "1.2em",
         origin: "right",
       }).reveal("#contact");
+      ScrollReveal({
+        reset: true,
+        duration: 1000,
+        distance: "1.2em",
+        origin: "right",
+      }).reveal("#footer");
     </script>
   </body>
 </html>
