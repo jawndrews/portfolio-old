@@ -47,7 +47,7 @@
           href="javascript:void(0);"
           class="icon"
           title="menu"
-          onclick="myFunction()"
+          onclick="menuFunction()"
         >
           <img src="images/menu.svg" id="menu-svg" alt="..." />
         </a>
@@ -69,6 +69,7 @@
           I'm a designer and developer <br />interested in all things creative.
         </p>
       </section>
+      <div class="spacer"></div>
       <section id="about">
         <article class="about-content-left">
           <h1 class="about-header">ABOUT ME</h1>
@@ -336,7 +337,7 @@
         duration: 1000,
         distance: "1.2em",
         origin: "left",
-        viewFactor: 0.3,
+        viewFactor: 0.25,
       }).reveal("#projects");
       ScrollReveal({
         reset: true,
